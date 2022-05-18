@@ -1,22 +1,24 @@
 
-let dia = Number(prompt("ingrese el número de dia de hoy"))
+let fecha = new Date()
+var dia=fecha.getDay()
+console.log(dia)
 numdia(dia)
 function numdia(dia){
     switch (dia){
-        case 0: alert('es domingo') 
+        case 0: document.getElementById("hoy").innerHTML="Domingo" 
         break;
-        case 1: alert("es lunes") 
+        case 1: document.getElementById("hoy").innerHTML="Lunes" 
         break;
-        case 2: alert("es martes") 
+        case 2: document.getElementById("hoy").innerHTML="Martes"  
         break;
-        case 3: alert("es miercoles") 
+        case 3: document.getElementById("hoy").innerHTML="Miercoels" 
         break;
-        case 4: alert("es jueves") 
+        case 4: document.getElementById("hoy").innerHTML="Jueves" 
         break;
-        case 5: alert("es viernes") 
+        case 5: document.getElementById("hoy").innerHTML="viernes" 
         break;
-        case 6: alert("es sabado") 
+        case 6:document.getElementById("hoy").innerHTML="Sabado" 
         break;
-        default: alert("no es un dia")
+        default: document.getElementById("hoy").innerHTML="no es un dia" 
     }
 }
